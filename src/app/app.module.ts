@@ -1,7 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { NgModule } from '@angular/core';
 
-import { DataTableModule } from 'primeng/primeng';
+import { DataTableModule, ButtonModule, InputTextModule, InputMaskModule,
+  CalendarModule} from 'primeng/primeng';
 import { HttpClientModule} from '@angular/common/http';
 
 import { AppComponent } from './app.component';
@@ -18,7 +21,12 @@ import { ItemService } from './item.service';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     DataTableModule,
+    ButtonModule,
+    InputTextModule,
+    InputMaskModule,
+    CalendarModule,
     HttpClientModule
   ],
   providers: [
